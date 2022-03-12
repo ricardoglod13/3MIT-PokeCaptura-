@@ -1,0 +1,34 @@
+CREATE TABLE `pokemones_capturados` (
+	`id` VARCHAR(50) NOT NULL COLLATE 'latin1_swedish_ci',
+	`nombre` CHAR(100) NOT NULL COLLATE 'latin1_swedish_ci',
+	PRIMARY KEY (`id`) USING BTREE,
+	UNIQUE INDEX `id` (`id`) USING BTREE,
+	UNIQUE INDEX `nombre` (`nombre`) USING BTREE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+CREATE TABLE `usuarios` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`nombre` CHAR(100) NOT NULL COLLATE 'latin1_swedish_ci',
+	PRIMARY KEY (`id`) USING BTREE,
+	UNIQUE INDEX `id` (`id`) USING BTREE,
+	UNIQUE INDEX `nombre` (`nombre`) USING BTREE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=3
+;
+
+CREATE TABLE `usuarios_pokemones` (
+	`id_poke` VARCHAR(50) NOT NULL COLLATE 'latin1_swedish_ci',
+	`id_usu` INT(11) NOT NULL,
+	INDEX `FK_usuarios_pokemones_pokemones_capturados` (`id_poke`) USING BTREE,
+	INDEX `FK_usuarios_pokemones_usuarios` (`id_usu`) USING BTREE,
+	CONSTRAINT `FK_usuarios_pokemones_pokemones_capturados` FOREIGN KEY (`id_poke`) REFERENCES `pokedb`.`pokemones_capturados` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `FK_usuarios_pokemones_usuarios` FOREIGN KEY (`id_usu`) REFERENCES `pokedb`.`usuarios` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="html5, css3, javascript, programacion web"/>
+        <title>Login Entrenador</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+        <style>
+            body {background-image: url("{{ url_for('static', filename='images/fondo.jpg') }}");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+        </style>
+
+    </head>
+    <body>
+        <div id="contenido">
+            <section>
+                <div id="texto" class="contacto">
+                    <p>¿Cual es tu nombre de entrenador?</p>
+                    <form action="/pokeLogin" method="POST" id="loginForm">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre"  name="nombre" placeholder="Requerido" required>
+                        <button type="submit" id="enviar" name="enviar">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="{{ url_for('static', filename='javascript/utilities.js') }}"></script>
+        <script src="{{ url_for('static', filename='javascript/contacto.js') }}"></script>
+    </body>
+</html>

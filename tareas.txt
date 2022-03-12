@@ -1,0 +1,13 @@
+Realizadas
+*Introduccion del nombre del entrenador*
+*Captura de pokemones*
+*Vista aleatora de captura*
+*Busqueda de pokemones*
+*Guardar informacion relacional en la base de datos*
+*Vista de los pokemons capturados por el entrenador*
+*ALerts etilizados con sweetAlert2*
+
+No Realizadas
+*Logout*
+*Enviar alert si usuario ya existe*
+*Liberar pokemon*

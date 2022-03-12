@@ -1,0 +1,229 @@
+.header{
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 1000px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.header::before{
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+form{
+    width: 200px;
+    margin: 20px auto;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+}
+
+.poke-card{
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 800px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.poke-card::before{
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.busqueda{
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.busqueda::before{
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-contenedor{
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.poke-tipos div{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}
+
+.poke-img{
+    width: 180px;
+    border-radius: 50%;
+}
+
+.poke-captura{
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid black;
+    align-content: stretch;
+}
+
+.poke-captura:hover{
+    font-weight: bold;
+    background-color: #EB4000;
+    transition-duration: 0.5s;
+}
+
+.user{
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid black;
+    align-content: stretch;
+}
+
+.user a{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.entrenador{
+    width: 180px;
+    margin: 10px auto;
+}
+
+label{
+    display: block;
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+    color: #000;
+}
+
+.contacto{
+    position: relative;
+    height: 300px;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 500px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 200px auto;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.contacto p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: x-large;
+}
+
+.contacto label{
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+}
+
+.contacto #enviar{
+    width: 200px;
+    margin: 20px auto;
+    position: relative;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+}
+
+.contacto #enviar:hover{
+    font-weight: bold;
+    background-color: #EB4000;
+    transition-duration: 0.5s;
+}
+
+.contacto::before{
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.contenedor-captura{
+    width: 100%;
+}

@@ -1,0 +1,39 @@
+.contenedor{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "contenido contenido contenido"
+                         "contenido contenido contenido"
+                         "contenido contenido contenido"
+                         "sidebar sidebar sidebar"
+                         "footer footer footer";
+}
+
+.contenedor .header{
+    grid-area: header;
+}
+
+.contenedor .contenido{
+    grid-area: contenido;
+}
+
+.contenedor .sidebar{
+    grid-area: sidebar;
+}
+
+.contenedor .footer{
+    grid-area: footer;
+}
+
+.contenedor .contenido .poke-card{
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(300px, 300px));
+    gap: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
