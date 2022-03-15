@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS `pokedb`;
+USE `pokedb`;
+
 CREATE TABLE `pokemones_capturados` (
 	`id` VARCHAR(50) NOT NULL COLLATE 'latin1_swedish_ci',
 	`nombre` CHAR(100) NOT NULL COLLATE 'latin1_swedish_ci',
@@ -18,7 +21,7 @@ CREATE TABLE `usuarios` (
 )
 COLLATE='latin1_swedish_ci'
 ENGINE=InnoDB
-AUTO_INCREMENT=3
+AUTO_INCREMENT=1
 ;
 
 CREATE TABLE `usuarios_pokemones` (
